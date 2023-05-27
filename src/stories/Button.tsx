@@ -4,7 +4,7 @@ import './button.css';
 /**
  * Primary UI component for user interaction
  */
-export const Button = (props) => {
+export const Button = (props: any) => {
   props = mergeProps({ size: 'small' }, props);
   const [local, rest] = splitProps(props, [
     'primary',

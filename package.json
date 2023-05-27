@@ -6,7 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "preview-storybook": "vite ./storybook-static"
   },
   "keywords": [],
   "author": "",
@@ -21,9 +26,12 @@
     "react-dom": "^18.2.0",
     "storybook": "^7.0.11",
     "storybook-solidjs": "^1.0.0-beta.2",
-    "storybook-solidjs-vite": "^1.0.0-beta.2"
+    "storybook-solidjs-vite": "^1.0.0-beta.2",
+    "typescript": "^5.0.4",
+    "vite": "^4.3.9",
+    "vite-plugin-solid": "^2.7.0"
   },
   "dependencies": {
-    "vite-plugin-solid": "^2.7.0"
+    "solid-js": "^1.7.5"
   }
 }

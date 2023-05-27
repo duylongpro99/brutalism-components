@@ -1,5 +1,5 @@
-/** @type { import('storybook-solidjs-vite').StorybookConfig } */
-const config = {
+import type { StorybookConfig } from "storybook-solidjs-vite";
+const config: StorybookConfig = {
   stories: ["../stories/**/*.mdx", "../stories/**/*.stories.@(js|jsx|ts|tsx)"],
   addons: [
     "@storybook/addon-links",
@@ -12,6 +12,11 @@ const config = {
   },
   docs: {
     autodocs: "tag",
+  },
+  staticDirs: ["../public"],
+  typescript: {
+    check: true,
+    checkOptions: {},
   },
 };
 export default config;
